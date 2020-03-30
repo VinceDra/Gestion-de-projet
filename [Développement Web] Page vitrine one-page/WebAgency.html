@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <title>Web Agency</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="webagency">
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" media="screen and (max-width: 800px)" href="media-style.css">
+  <!-- écran petite résolution -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- get awesome font -->
+  <meta name="viewport" content="width=device-width" />
+  <!-- adaptation taille -->
+
+  <body>
+    <header>
+      <!--========= Header bandeau =========-->
+      <div class="logo-webagency">
+        <img src="images/logo.png" alt="logo webagency" />
+      </div>
+
+      <nav class="menu">
+        <a class="active" href="#slider">Accueil</a>
+        <a href="#service">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </header>
+    <!--========= Fin Header bandeau =========-->
+
+    <!--========= Section accueil =========-->
+    <section id="slider" class="accueil">
+
+      <div class="bloc-chevron">
+      <i class="fa fa-chevron-left" id="fleche-gauche"></i>
+      <img src="images/slider/1.jpg" alt="fille avec mégaphone"/>
+      <i class="fa fa-chevron-right" id="fleche-droite"></i>
+      </div>
+
+      <div class="texte-slide">
+        <h1><span>WEBAGENCY</span>: Créons les sites<br>qui vous correspondent</h1>
+        <p>Votre prochain projet est entre nos mains !</p>
+        <a href="#portfolio"> </a>
+        <input type="button" class="bouton-slider" value="Plus d'Infos"/>
+      </div>
+
+    </section>
+    <!--========= Fermeture section accueil =========-->
+
+    <!--========= Services =========-->
+    <section id="service">
+
+      <h2 class="titre-services">NOS SERVICES</h2>
+      <div class="bloc-ligne-cercle1"><!-- awesome icons avec cercle/point -->
+        <hr class="ligne1">
+        <i class="fa fa-circle" id="cercle"></i>
+        <hr class="ligne2">
+      </div> <!-- dessigne lignes -->
+      <p class="texte-nos-services">Notre agence propose des services sur-mesure selon vos exigences</p>
+
+      <div class="presentation-services"> <!-- tout le bloc macbook+conteneurs -->
+        <div class="conteneur-mac">
+          <img class="ecran-macbook" src="images/macbook.png" alt="macbook">
+        </div>
+
+        <aside>
+          <div class="conteneurlogo1"> <!-- conteneur 1 -->
+            <div class="fleche-point">
+              <div class="fleche"><i class="fa fa-line-chart"></i> </div>
+              <div class="point1"><i class="fa fa-circle"></i> </div>
+            </div>
+
+            <div class="containertexteUX">
+              <h3 class="UX">UX design</h3>
+              <p class="UXtexte"><b>La navigation du site est primordial dans un soucis d'efficacité.</b>
+                <br>Nous maitrisons l'ergonomie afin que vos utilisateurs se sentent à l'aise<br>
+                avec des interfaces intuitives et pertinentes.</p>
+            </div>
+          </div> <!-- fin conteneur 1 -->
+
+          <div class="conteneurlogo2"> <!-- conteneur 2 -->
+            <div class="cube-point">
+              <div class="cubes"><i class="fa fa-cubes"></i> </div>
+              <div class="point2"><i class="fa fa-circle"></i> </div>
+            </div>
+
+            <div class="containertexteUI">
+              <h3 class="UI">UI design</h3>
+              <p class="UItexte"><b>L'interface doit être intuitive et agréable visuellement</b>
+                <br>Nos services optimisent le rendu de votre futur site avec des contenus<br>
+                qui attireront immédiatement les visiteurs.</p>
+            </div>
+          </div> <!-- fin conteneur 2 -->
+
+          <div class="conteneurlogo3"> <!-- conteneur 3 -->
+
+            <div class="disque-point">
+              <div class="disque"><i class="fa fa-pie-chart"></i> </div>
+              <div class="point3"><i class="fa fa-circle"></i> </div>
+            </div>
+
+            <div class="containertexteSEO">
+              <h3 class="SEO">SEO</h3>
+              <p class="SEOtexte"><b>Nous vous garantissons un référencement des plus efficace !</b><br>
+                Notre expertise dans ce domaine est reconnu pour permettre <br>
+                d'attirer et fidéliser des utilisateurs sur le long terme.</p>
+            </div>
+          </div> <!-- fin conteneur 3 -->
+
+        </aside>
+      </div> <!-- Fin du bloc macbook+conteneurs -->
+
+    </section>
+    <!--=============== Fermeture Services ===============-->
+
+    <!--========= Nos Projets ===============-->
+    <section id="portfolio" class="portfolio">
+
+      <h2 class="projets-titre"> NOS PROJETS</h2>
+      <div class="bloc-ligne-cercle2"> <!-- awesome icons avec cercle/point -->
+        <hr class="ligne3">
+        <i class="fa fa-circle" id="cercle2"></i>
+        <hr class="ligne4">
+      </div>
+
+      <p class="projets-texte">Dans le cadre d'une relation de proximité inscrite dans la durée, nos équipes vous accompagnent,<br>
+        et vous conseillent pour tous vos projets ! Decouvrez quelques exemples de nos realisations</p>
+      <nav class="projets-menu">
+        <ul id="liste2">
+          <li id="allworks"> <a> <i class="fa fa-caret-down"></i>All Works</a> </li>
+          <li id="creative"> <a> <i class="fa fa-caret-down"></i>Creative</a> </li>
+          <li id="corporate"> <a> <i class="fa fa-caret-down"></i>Corporate</a> </li>
+          <li id="portfolio-menu"> <a> <i class="fa fa-caret-down"></i>Portfolio</a> </li>
+        </ul>
+      </nav>
+
+      <div class="liste-projets"> <!-- Conteneur du Bloc Projets -->
+        <article class="projet-site">
+          <a href="images/portfolio/01.jpg" title="Projet déguisement théâtre" target="_blank">
+            <img src="images/portfolio/01.jpg" class="catalogue" alt="projet déguisement théâtre"> </a>
+          <div class="legende-projet"> <!-- bloc caption -->
+            <h4>TheatreRigoleto.com</h4>
+            <p>Masques pour toutes occasions</p>
+          </div>
+          <span class="oeil"> <i class="fa fa-eye"> </i> </span>
+        </article>
+
+        <article class="projet-site">
+          <a href="images/portfolio/02.jpg" title="Projet centre d'art lapin rose" target="_blank">
+          <img src="images/portfolio/02.jpg" class="catalogue" alt="projet centre artistique lapin rose"> </a>
+          <div class="legende-projet">
+            <h4>RabbitArt.com</h4>
+            <p>Musée d'art moderne à Chicago</p>
+          </div>
+          <span class="oeil"> <i class="fa fa-eye"> </i>  </span>
+        </article>
+
+        <article class="projet-site">
+          <a href="images/portfolio/03.jpg" title="Projet marque Pompadour" target="_blank">
+          <img src="images/portfolio/03.jpg" class="catalogue" alt="projet mrque Pompadour"> </a>
+          <div class="legende-projet">
+            <h4>Original-Pompadour.com</h4>
+            <p>Site commercial de chaussures originales</p>
+          </div>
+          <span class="oeil"> <i class="fa fa-eye"> </i> </span>
+        </article>
+
+        <article class="projet-site">
+          <a href="images/portfolio/04.jpg" title="Projet Cahier des Charges" target="_blank">
+           <img src="images/portfolio/04.jpg" class="catalogue" alt="projet cahier des charges"> </a>
+          <div class="legende-projet">
+            <h4>ProductBacklog.com</h4>
+            <p>La gestion de vos projets Agile</p>
+          </div>
+          <span class="oeil"> <i class="fa fa-eye"> </i> </span>
+        </article>
+
+        <article class="projet-site">
+          <a href="images/portfolio/05.jpg" title="Projet centre commercial Nantes" target="_blank">
+          <img src="images/portfolio/05.jpg" class="catalogue" alt="projet centre commercial Nantes"> </a>
+          <div class="legende-projet">
+            <h4>LaBizantine-Nantes.com</h4>
+            <p>Centre commercial ouvert fin 2017 à Nantes</p>
+          </div>
+          <span class="oeil"> <i class="fa fa-eye"> </i> </span>
+        </article>
+
+        <article class="projet-site">
+          <a href="images/portfolio/06.jpg" title="Portfolio Fantasy-SF" target="_blank">
+          <img src="images/portfolio/06.jpg" class="catalogue" alt="portfolio fantasy-sf"> </a>
+          <div class="legende-projet">
+            <h4>DystopiaSF.com</h4>
+            <p>Site pour fan et écrivains sur le thème de la SF</p>
+          </div>
+          <span class="oeil"> <i class="fa fa-eye"> </i> </span>
+        </article>
+
+        <article class="projet-site">
+          <a href="images/portfolio/07.jpg" title="Projet Artiste à l'Encre" target="_blank">
+          <img src="images/portfolio/07.jpg" class="catalogue" alt="projet artiste encre"> </a>
+          <div class="legende-projet">
+            <h4>DrawInk.com</h4>
+            <p>Vente de materiels pour peindre, dessiner, illustrer</p>
+          </div>
+          <span class="oeil"> <i class="fa fa-eye"> </i> </span>
+        </article>
+
+        <article class="projet-site">
+          <a href="images/portfolio/08.jpg" title="Projet Fourniture de Bureau" target="_blank">
+           <img src="images/portfolio/08.jpg" class="catalogue" alt="projet fourniture de bureau"> </a>
+          <div class="legende-projet">
+            <h4>OfficeBest.net</h4>
+            <p>Fournitures de bureau pour entreprise</p>
+          </div>
+          <span class="oeil"> <i class="fa fa-eye"> </i> </span>
+        </article>
+
+      </div> <!-- Conteneur du Bloc Projets -->
+
+    </section>
+    <!--========= Fin Nos Projets ===============-->
+
+    <!--========= Contact ===============-->
+    <section id="contact">
+      <form>
+
+        <div class="formulaire">
+          <h3 class="contact-info">Contact Info</h3>
+          <p class="adresse-site"><b>Webagency Sas</b><br>25 rue d'Hauteville 7510 Paris<br><u>Tel</u> : 01 02 03 04 05</p>
+          <input type="text" class="nom-prenom" placeholder="Name" /> <br>
+          <input type="text" class="email" placeholder="Email" /> <br>
+          <input type="text" class="objet" placeholder="Subject" /> <br>
+          <textarea class="message" placeholder="Message"> </textarea>
+          <input type="button" class="envoyer" value="Envoyer" /> <br>
+        </div>
+
+      </form>
+      <iframe class="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2157873703713!2d2.3476356151191924!3d48.87316277928895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1515582089596"
+        height="500"></iframe>
+      <div class="filtre-carte"> </div>
+    </section>
+
+    <footer>
+      <ul>
+        <li>Conditions Générales d'Utilisation</li>
+        <li>Politique de Protection des Données Personelles</li>
+      </ul>
+    </footer>
+
+  </body>
+
+</html>

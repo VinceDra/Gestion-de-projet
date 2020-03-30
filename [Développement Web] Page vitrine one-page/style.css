@@ -1,0 +1,730 @@
+body {
+  margin: 0;
+	padding: 0; /*--- pas marges ni padding entre browsers ---*/
+  width: 100%;
+  display: block;
+}
+
+/*---=========================---*/
+/*---======== bandeau ========---*/
+/*---=========================---*/
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0; /*--- position au plus haut ---*/
+  background-color: #FFF;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 95px;
+  z-index: 100; /*--- ordre priorité affichage ---*/
+}
+
+.logo-webagency {
+  padding-left: 12%;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end; /*--- le positionner au bout ---*/
+  flex: 1; /*--- les éléments ont la même distance ---*/
+  padding-right: 12%;
+}
+
+.menu a {
+  text-decoration: none; /*--- enlever la justification dessous ---*/
+  color: black;
+  padding: 25px;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.menu a:active { /*--- pseudo-classe sélection ---*/
+  border-top: 3px solid #68A8D1;
+}
+
+.menu a:hover { /*--- pseudo-classe survol ---*/
+  border-top: 3px solid #68A8D1;
+}
+
+/*============-----------=================---*/
+/*============--- Accueil =================---*/
+/*============-----------=================---*/
+
+.accueil {
+  position: relative; /*--- repositionner le titre/responsive ---*/
+  margin-top: 70px;
+}
+
+.bloc-chevron {
+	display: block;
+}
+
+.fa-chevron-left:before {
+  position: relative;
+  cursor: pointer;
+  top: 25px;
+  left: 14px;
+}
+
+#fleche-gauche {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 35px;
+  /*--- épaisseur  ---*/
+  height: 65px;
+  color: white;
+  border-radius: 0px 50px 50px 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  /*--- gérer transparence  ---*/
+}
+
+section img {
+  width: 100%;
+}
+
+.fa-chevron-right:before {
+  position: relative;
+  cursor: pointer;
+  top: 25px;
+  right: -12px;
+}
+
+#fleche-droite {
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	width: 35px;
+	height: 65px;
+	color: white;
+	border-radius: 50px 0px 0px 50px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.texte-slide {
+  position: absolute;
+  /*--- fixer le slogan en mode smartphone ---*/
+  top: 25%;
+  left: 10%;
+  color: white;
+}
+
+h1 {
+  margin-left: 30px;
+  font-size: 40px;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.texte-slide span {
+  color: #599ABB;
+}
+
+.texte-slide p {
+  margin-left: 30px;
+  font-size: 25px;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.bouton-slider {
+  height: 50px;
+  width: 120px;
+  margin-left: 30px;
+  border-radius: 5px;
+  font-family: "Roboto-Bold", sans-serif;
+  background-color: #68A8D1;
+  color: white;
+  font-size: 18px;
+  border-top: 0px solid;
+  /* --- Arrondir les bords ---*/
+  border-left: 0px solid;
+  border-right: 0px solid;
+  border-bottom: 0px solid;
+  cursor: pointer;
+}
+
+.bouton-slider:hover {
+  background-color: #599ABB;
+}
+
+/* ---=========================---*/
+/* ---======= SERVICES ========---*/
+/* ---=========================---*/
+
+.titre-services {
+  text-align: center;
+  margin-top: 120px;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 45px;
+  margin-bottom: 12px;
+}
+
+.ligne-cercle {
+	text-align: center;
+}
+
+hr {
+  position:relative;
+  width: 120px;
+}
+
+.bloc-ligne-cercle1 {
+	display: flex;
+	justify-content: center;
+}
+
+.ligne1 {
+  color: #bbbfc0;
+  margin-right: 5px;
+  margin-top: 12px;
+  width: 75px;
+  height: 0px;  /* --- taille ---*/
+}
+
+#cercle {
+	font-size:20px;
+	color:#68A8D1;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.ligne2 {
+  color: #bbbfc0;
+  margin-left: 5px;
+  margin-top: 12px;
+  width: 75px;
+  height: 0px;
+}
+
+.texte-nos-services {
+  font-size: 20px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 80px;
+}
+
+.presentation-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.conteneur-mac {
+  display: block;
+  margin-right: 70px;
+	max-width: 100%;
+}
+
+.ecran-macbook {
+  width: 100%;
+}
+
+.aside {
+  margin-left: 40px;
+}
+
+/* --- UX ---*/
+
+.conteneurlogo1 {
+  margin-top: 50px; /* --- sépare les blocs de textes ---*/
+  display: flex;
+  width: 100%;
+}
+
+.fleche-point {
+  display: flex;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #e0e0e3;
+  border-radius: 50%;
+}
+
+.fleche {
+  display: flex;
+  margin-top: 16px;
+  margin-left: 14px;
+  font-size: 20px;
+  color: #73bcf8;
+}
+
+.point1 {
+  margin-top: 20px;
+  margin-left: 9px;
+  font-size: 12px;
+  color: #73bcf8;
+}
+
+.UX { /* --- partie UX texte ---*/
+  margin-top: 5px;
+  font-family: "Roboto-Bold", sans-serif;
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+.containertexteUX {
+  margin-left: 20px;
+}
+
+.UXtexte {
+  font-family: "Roboto-Bold", sans-serif;
+  margin-top: -15px;
+}
+
+/* --- UI ---*/
+
+.conteneurlogo2 {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+}
+
+.cube-point {
+  display: flex;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #e0e0e3;
+  border-radius: 50%;
+}
+
+.cubes {
+  display: flex;
+  margin-top: 16px;
+  margin-left: 13px;
+  font-size: 20px;
+  color: #73bcf8;
+}
+
+.point2 {
+  margin-top: 20px;
+  margin-left: 8px;
+  font-size: 12px;
+  color: #73bcf8;
+}
+
+.UI { /* --- partie UI texte ---*/
+  margin-top: 5px;
+  font-family: "Roboto-Bold", sans-serif;
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+.containertexteUI {
+  margin-left: 20px;
+}
+
+.UItexte {
+  font-family: "Roboto-Bold", sans-serif;
+  margin-top: -15px;
+}
+
+/* --- SEO ---*/
+
+.conteneurlogo3 {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+}
+
+.conteneurlogo2 {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+}
+
+.disque-point {
+  display: flex;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #e0e0e3;
+  border-radius: 50%;
+}
+
+.disque {
+  display: flex;
+  margin-top: 14px;
+  margin-left: 13px;
+  font-size: 23px;
+  color: #73bcf8;
+}
+
+.point3 {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #73bcf8;
+}
+
+.SEO { /* --- partie SEO texte ---*/
+  margin-top: 5px;
+  font-family: "Roboto-Bold", sans-serif;
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+.containertexteSEO {
+  margin-left: 20px;
+}
+
+.SEOtexte {
+  font-family: "Roboto-Bold", sans-serif;
+  margin-top: -15px;
+}
+/*---=========================---*/
+/*---======== PROJETS ========---*/
+/*---=========================---*/
+
+.portfolio {
+  background-color: #f0f0f5;
+  padding-bottom: 30px;
+}
+
+.projets-titre {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Roboto-Bold", sans-serif;
+  margin-top: 80px;
+  padding-top: 60px;
+}
+
+.bloc-ligne-cercle2 {
+	display: flex;
+	justify-content: center;
+}
+
+.ligne3 {
+  color: #bbbfc0;
+  margin-right: 5px;
+  margin-top: 12px;
+  width: 75px;
+  height: 0px;  /* --- taille ---*/
+}
+
+#cercle2 {
+	font-size:20px;
+	color:#68A8D1;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.ligne4 {
+  color: #bbbfc0;
+  margin-left: 5px;
+  margin-top: 12px;
+  width: 75px;
+  height: 0px;
+}
+
+.projets-texte {
+  text-align: center;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 18px;
+  margin-top: 40px;
+  line-height: 30px;
+}
+
+.projets-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#liste2 {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding: 25px;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+#liste2 li {
+  background-color: #cdd3d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 6px 20px 6px 20px; /*--- top-right-bottom-left ---*/
+}
+
+#liste2 #allworks {
+  background-color: #66A9D1;
+  height: 40px;
+  color: white;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 0 0 5px; /*--- arrondir les bords ---*/
+  border-bottom: 2px solid #468dad;
+}
+
+#allworks i { /*--- triangle du bas ---*/
+  display: flex;
+  position: absolute;
+  bottom: -45%;
+  margin-left: 25px;
+  color: #468dad;
+  font-size: 2em;
+}
+
+#creative {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #E2E2E2;
+  height: 40px;
+  display: flex;
+}
+
+#creative i {
+  display: none;
+  position: absolute;
+  bottom: -45%;
+  margin-left: 25px;
+  color: #468dad;
+  font-size: 2em;
+}
+
+#corporate {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #E2E2E2;
+  height: 40px;
+  display: flex;
+}
+
+#corporate i {
+  display: none;
+  position: absolute;
+  bottom: -45%;
+  margin-left: 22px;
+  color: #6396b6;
+  font-size: 2em;
+}
+
+#portfolio-menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E2E2E2;
+  height: 40px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+#portfolio-menu i {
+  display: none;
+  position: absolute;
+  bottom: -45%;
+  margin-left: 22px;
+  color: #6396b6;
+  font-size: 2em;
+}
+
+#liste2 li:hover {
+  background-color: #66A9D1;
+  border-bottom: 2px solid #468dad;
+}
+
+#liste2 li:hover a {
+  display: flex;
+  color: white;
+  cursor: pointer;
+}
+
+#liste2 li:hover i {
+  display: flex;
+}
+
+.liste-projets {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  position: relative;
+  margin-top: 20px;
+  padding-left: 30px;
+  margin-bottom: 50px;
+  width: 90%;
+}
+
+.projet-site {
+  margin-left: 15px;
+  padding: 25px;
+  width: 300px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.liste-projets .projet-site:hover .legende-projet {
+  display: flex;
+}
+
+.liste-projets .projet-site:hover .oeil {
+  display: flex;
+}
+
+.catalogue {
+  position: relative;
+  width: 350px;
+  height: auto;
+}
+
+.legende-projet {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3); /*--- transparence---*/
+  color: white;
+  bottom: 28px;
+  width: 100%;
+  height: 25%; /*--- hauteur du caption ---*/
+  display: none; /*--- reste caché ---*/
+  text-align: left;
+}
+
+.legende-projet h4 {
+  position: absolute;
+  padding-left: 18px;
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+.legende-projet p {
+  color: white;
+  font-size: 1em;
+  bottom: 3px;
+  position: absolute;
+  padding-left: 20px;
+  margin: 20;
+}
+
+.oeil {
+  display: none; /*--- reste caché ---*/
+  position: absolute;
+  top: 70%;
+  padding: 0.3em 0.4em 0.3em 0.4em;
+  background-color: #54a7b2;
+  border-radius: 50%; /*--- Arrondir ---*/
+  border: 2px solid white;
+  color: white;
+  margin-left: 300px;
+  margin-top: -25px;
+  font-size: 18px;
+}
+
+/*---========================---*/
+/*---======== Contact ========---*/
+/*---=========================---*/
+
+form { /*--- début formulaire ---*/
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  right: 10%;
+  z-index: 100;
+}
+
+.formulaire {
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*--- filtre blanc + reduc opacité formulaire ---*/
+  height: 660px;
+  width: 400px;
+}
+
+.contact-info {
+  font-size: 25px;
+  margin-left: 20px;
+  margin-bottom: -3px;
+  text-align: justify;
+}
+
+.adresse-site {
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+.nom-prenom {
+  height: 20px;
+  width: 350px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.email {
+  height: 20px;
+  width: 350px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.objet {
+  height: 20px;
+  width: 350px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.message {
+  height: 250px;
+  width: 350px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 1;
+}
+
+.envoyer {
+  height: 35px;
+  width: 80px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #68A8D1;
+  color: white;
+  opacity: 1;
+}
+
+/*--- fin formulaire ---*/
+
+.carte {
+  position: absolute;
+  width: 100%;
+  height: 750px;
+	border:0
+}
+
+.filtre-carte {
+  position: relative;
+  background-color: #00BCD4;
+  height: 750px;
+  opacity: 0.3;
+}
+
+.filtre-carte:hover { /*--- enlève filtre bleu ---*/
+  opacity: 0;
+}
+
+/*---========================---*/
+/*---======== Footer ========---*/
+/*---=========================---*/
+
+.footer {
+  display: flex;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.footer li:hover {
+  color: #68A8D1;
+}
